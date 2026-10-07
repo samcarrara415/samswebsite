@@ -226,6 +226,16 @@ h2::after {
     min-height: 300px;
 }
 
+.theme-freaksmc { background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); }
+.theme-games { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
+.theme-roblox { background: linear-gradient(135deg, #ea580c 0%, #f97316 100%); }
+.theme-cpp { background: linear-gradient(135deg, #334155 0%, #64748b 100%); }
+
+.theme-freaksmc .app-icon { color: #7c3aed; }
+.theme-games .app-icon { color: #059669; }
+.theme-roblox .app-icon { color: #ea580c; }
+.theme-cpp .app-icon { color: #334155; font-size: 1.6rem; }
+
 .app-icon {
     width: 100px;
     height: 100px;
@@ -376,6 +386,14 @@ footer {
 
     .project-image {
         min-height: 150px;
+    }
+
+    .project-info {
+        padding: 1.5rem;
+    }
+
+    .project-links {
+        flex-wrap: wrap;
     }
 
     section:nth-child(even) {
