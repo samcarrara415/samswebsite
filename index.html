@@ -27,7 +27,7 @@
             <div class="hero-content">
                 <h1>Hi, I'm Sam Carrara</h1>
                 <p class="subtitle">Computer Science Student at Kent State University</p>
-                <p class="tagline">I build and ship real products: a hosting business, an iOS app, and games people play</p>
+                <p class="tagline">I build and ship real products: a hosting business, an iOS app, games people play, and AI-powered developer tools</p>
                 <a href="#projects" class="cta-button">View My Work</a>
             </div>
         </section>
@@ -36,7 +36,8 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <p>I'm a Computer Science student at Kent State University (Class of 2028, minor in Computer Engineering). I like taking ideas all the way to launch, and most of what I build has real users or paying customers.</p>
-                <p>I run FreaksMC, a Minecraft server-hosting business I built solo, shipped NeedlePointer to the App Store, and make Roblox games under DoSa Games. I also work as a truck driver and catering coordinator at Taste of Excellence Catering in Strongsville, OH.</p>
+                <p>I run FreaksMC, a Minecraft server-hosting business I built solo, shipped NeedlePointer to the App Store, and make Roblox games under DoSa Games. Lately I've been building developer tools: an AI app builder that runs on your own Claude subscription, a C++ playground with a real compiler that installs on your phone, and an AI resume tool with Stripe subscriptions.</p>
+                <p>I also work as a truck driver and catering coordinator at Taste of Excellence Catering in Strongsville, OH.</p>
             </div>
         </section>
 
@@ -59,8 +60,10 @@
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Responsive Design</li>
+                        <li>React / Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>PWAs / Service Workers</li>
                     </ul>
                 </div>
                 <div class="skill-card">
@@ -84,13 +87,33 @@
                     </ul>
                 </div>
                 <div class="skill-card">
+                    <h3>AI &amp; APIs</h3>
+                    <ul>
+                        <li>Claude / Anthropic API</li>
+                        <li>OAuth (PKCE)</li>
+                        <li>Streaming responses</li>
+                        <li>REST API integration</li>
+                        <li>Prompt engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Games &amp; 3D</h3>
+                    <ul>
+                        <li>Roblox Studio / Luau</li>
+                        <li>Blender</li>
+                        <li>C# (s&amp;box engine)</li>
+                        <li>Emscripten / WebAssembly</li>
+                        <li>Mobile-first game design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
                     <h3>Infrastructure</h3>
                     <ul>
                         <li>Linux Servers</li>
-                        <li>Git / GitHub</li>
-                        <li>CI/CD (Cloudflare Pages)</li>
+                        <li>Node.js / Express / WebSockets</li>
+                        <li>Supabase (Postgres, Auth, RLS)</li>
                         <li>Stripe Payments</li>
-                        <li>Roblox Studio / Luau</li>
+                        <li>Git / GitHub / CI/CD</li>
                     </ul>
                 </div>
             </div>
@@ -200,6 +223,136 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-image theme-ai">
+                        <div class="app-icon">CS</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Claude Studio</h3>
+                        <p class="project-tagline">An AI app builder, similar to Replit, that runs on your own Claude subscription</p>
+                        <p>Describe an app in chat and Claude writes it, with a file tree, code editor, and live preview. You log in with your own Claude Pro/Max plan, so there's no shared API key to pay for.</p>
+                        <ul class="project-features">
+                            <li>"Log in with Claude" via PKCE OAuth, with automatic token refresh</li>
+                            <li>Streams multi-file projects; follow-up prompts edit the code with full file context</li>
+                            <li>C++ projects compile with <code>g++ -std=c++20</code> on the server and run with stdin, timeouts, and a console</li>
+                            <li>Monaco editor, a sandboxed preview iframe, and a mobile layout with bottom tabs; installable as a PWA</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Claude API</span>
+                            <span>OAuth</span>
+                            <span>Monaco</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/samcarrara415/Sams-repo/tree/main/claude-studio" class="project-link" target="_blank">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image theme-mcode">
+                        <div class="app-icon">&#9656;_</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>mcode</h3>
+                        <p class="project-tagline">A C++ playground in your browser that compiles with a real gcc</p>
+                        <p>Write C++, hit Run, and see the output in a terminal. No server and no account, and it installs to your home screen as an app.</p>
+                        <ul class="project-features">
+                            <li>Compiles on gcc 13.2 through the Wandbox API, so the full standard library works (C++17/20/23)</li>
+                            <li>Code editing with auto-close and auto-indent, plus a native editor on touch devices for real text selection</li>
+                            <li>Opens and saves <code>.cpp</code> files through the iOS Files app</li>
+                            <li>Offline app shell; a network-first service worker means new deploys show up right away</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>PWA</span>
+                            <span>Service Workers</span>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://samcarrara415.github.io/Sams-repo/claude-studio-web/" class="project-link" target="_blank">Try It</a>
+                            <a href="https://github.com/samcarrara415/Sams-repo/tree/main/claude-studio-web" class="project-link" target="_blank">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image theme-resume">
+                        <div class="app-icon">RR</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Resume Remaster</h3>
+                        <p class="project-tagline">AI resume rewriting, built as a free tool and a full SaaS</p>
+                        <p>Upload a PDF or DOCX resume, pick a target job, and Claude rewrites it for that role. It started as a static web app and grew into a paid product.</p>
+                        <ul class="project-features">
+                            <li>SaaS version: Next.js, TypeScript, and Tailwind, with Supabase auth and Postgres secured by row-level security</li>
+                            <li>Stripe checkout for one-off unlocks and monthly subscriptions, plus single-use promo codes for giveaways</li>
+                            <li>Verified-purchase reviews, an admin dashboard, and PDF/DOCX parsing on the server</li>
+                            <li>The free web version supports both API-key and Claude-subscription modes and was hardened for iOS Safari</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Supabase</span>
+                            <span>Stripe</span>
+                            <span>Claude API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://samcarrara415.github.io/Sams-repo/resume-remaster/" class="project-link" target="_blank">Try It</a>
+                            <a href="https://github.com/samcarrara415/Sams-repo/tree/main/resume-saas" class="project-link" target="_blank">Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image theme-academy">
+                        <div class="app-icon">C++</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>C++ Academy</h3>
+                        <p class="project-tagline">An app for learning C++ on your phone</p>
+                        <p>A mobile-first PWA that teaches C++ from "Hello, World!" through pointers, RAII, and object-oriented design, with an IDE built in.</p>
+                        <ul class="project-features">
+                            <li>A structured curriculum: foundations, control flow, functions, collections, memory, and OOP</li>
+                            <li>Lessons with exercises and challenges you solve in the built-in editor</li>
+                            <li>Installable and works offline</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>PWA</span>
+                            <span>C++</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://samcarrara415.github.io/Sams-repo/cpp-academy/" class="project-link" target="_blank">Try It</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image theme-fomo">
+                        <div class="app-icon">FR</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FOMO Radar</h3>
+                        <p class="project-tagline">A live meme-coin screener with rug-risk checks</p>
+                        <p>A browser app with no backend that scans new and trending DEX pools on Solana, Base, Ethereum, and BNB Chain every 60 seconds.</p>
+                        <ul class="project-features">
+                            <li>A 0–100 "FOMO score" built from price momentum, growth in unique buyers, buy pressure, and volume turnover</li>
+                            <li>Rug-risk checks: thin liquidity, honeypot patterns (no sells), wash trading, and dump patterns</li>
+                            <li>One-click links to audit tools (DexScreener, RugCheck, Honeypot.is, GoPlus)</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>REST APIs</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://samcarrara415.github.io/Sams-repo/fomo-tracker/" class="project-link" target="_blank">Try It</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <div class="project-image theme-cpp">
                         <div class="app-icon">C++</div>
                     </div>
@@ -221,6 +374,30 @@
                     </div>
                 </div>
             </div>
+            <h3 class="more-heading">More Projects</h3>
+            <div class="mini-grid">
+                <a class="mini-card" href="https://github.com/samcarrara415/Sams-repo/tree/main/remote-dev-server" target="_blank">
+                    <h4>Remote Dev Server</h4>
+                    <p>A web terminal plus live iOS Simulator streaming with touch input, so I can develop on a Mac from any browser.</p>
+                    <span class="mini-tech">Node.js · WebSockets · Swift · Python</span>
+                </a>
+                <a class="mini-card" href="https://github.com/samcarrara415/Sams-repo/tree/main/sbox-macos-patches" target="_blank">
+                    <h4>s&amp;box macOS Patches</h4>
+                    <p>Patches that get Facepunch's s&amp;box engine building on Apple Silicon: cross-platform paths, native library loading for each OS, and Rosetta workarounds.</p>
+                    <span class="mini-tech">C# · .NET · macOS</span>
+                </a>
+                <a class="mini-card" href="https://samcarrara415.github.io/Sams-repo/kitchen-catering/" target="_blank">
+                    <h4>The Seasonal Table</h4>
+                    <p>A kitchen and catering website with a rotating weekly menu and a form for booking events.</p>
+                    <span class="mini-tech">HTML · CSS · JavaScript</span>
+                </a>
+                <a class="mini-card" href="https://github.com/samcarrara415/Sams-repo/tree/main/WEB%20trivia%20game%20about%20my%20college" target="_blank">
+                    <h4>College Trivia</h4>
+                    <p>A multi-page web trivia game about my college and campus life.</p>
+                    <span class="mini-tech">HTML · JavaScript</span>
+                </a>
+            </div>
+            <p class="all-projects"><a href="https://samcarrara415.github.io/Sams-repo/" target="_blank">See all live demos &rarr;</a></p>
         </section>
 
         <section id="contact">

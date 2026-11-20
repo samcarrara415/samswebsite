@@ -401,3 +401,87 @@ footer {
         padding-right: 2rem;
     }
 }
+
+/* Added project themes */
+.theme-ai { background: linear-gradient(135deg, #c2410c 0%, #d97757 100%); }
+.theme-mcode { background: linear-gradient(135deg, #0f172a 0%, #334155 100%); }
+.theme-resume { background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); }
+.theme-academy { background: linear-gradient(135deg, #1e40af 0%, #6366f1 100%); }
+.theme-fomo { background: linear-gradient(135deg, #be185d 0%, #f43f5e 100%); }
+
+.theme-ai .app-icon { color: #c2410c; }
+.theme-mcode .app-icon { color: #0f172a; font-family: ui-monospace, Menlo, monospace; }
+.theme-resume .app-icon { color: #0d9488; }
+.theme-academy .app-icon { color: #1e40af; font-size: 1.6rem; }
+.theme-fomo .app-icon { color: #be185d; }
+
+.project-features code {
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.85em;
+    background: var(--bg-alt);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+}
+
+/* More projects */
+.more-heading {
+    font-size: 1.4rem;
+    margin: 3.5rem 0 1.5rem;
+}
+
+.mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.mini-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.mini-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mini-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.mini-tech {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.all-projects {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.all-projects a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.all-projects a:hover {
+    text-decoration: underline;
+}
