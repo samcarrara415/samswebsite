@@ -599,3 +599,10 @@ footer {
         min-height: 130px;
     }
 }
+
+.section-intro {
+    max-width: 720px;
+    color: var(--text-light);
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
