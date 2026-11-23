@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Carrara | CS Student & Developer</title>
+    <meta name="description" content="Sam Carrara, Computer Science student at Kent State. I build AI-powered iOS apps, run a game server hosting business, and build software with AI agents.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,9 @@
             <div class="logo">Sam Carrara</div>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,7 +29,7 @@
             <div class="hero-content">
                 <h1>Hi, I'm Sam Carrara</h1>
                 <p class="subtitle">Computer Science Student at Kent State University</p>
-                <p class="tagline">I build and ship real products: a hosting business, an iOS app, games people play, and AI-powered developer tools</p>
+                <p class="tagline">I build AI-powered apps, ship iOS apps to the App Store, and run a game server hosting business</p>
                 <a href="#projects" class="cta-button">View My Work</a>
             </div>
         </section>
@@ -35,112 +37,114 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
-                <p>I'm a Computer Science student at Kent State University (Class of 2028, minor in Computer Engineering). I like taking ideas all the way to launch, and most of what I build has real users or paying customers.</p>
-                <p>I run FreaksMC, a Minecraft server-hosting business I built solo, shipped NeedlePointer to the App Store, and make Roblox games under DoSa Games. Lately I've been building developer tools: an AI app builder that runs on your own Claude subscription, a C++ playground with a real compiler that installs on your phone, and an AI resume tool with Stripe subscriptions.</p>
-                <p>I also work as a truck driver and catering coordinator at Taste of Excellence Catering in Strongsville, OH.</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>iOS Development</h3>
-                    <ul>
-                        <li>Swift</li>
-                        <li>SwiftUI</li>
-                        <li>UIKit</li>
-                        <li>Xcode</li>
-                        <li>Core Data</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React / Next.js</li>
-                        <li>TypeScript</li>
-                        <li>Tailwind CSS</li>
-                        <li>PWAs / Service Workers</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <ul>
-                        <li>Python 3</li>
-                        <li>Django</li>
-                        <li>Flask</li>
-                        <li>Data Analysis</li>
-                        <li>Scripting</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>General CS</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>Data Structures</li>
-                        <li>Algorithms</li>
-                        <li>SQL / Databases</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>AI &amp; APIs</h3>
-                    <ul>
-                        <li>Claude / Anthropic API</li>
-                        <li>OAuth (PKCE)</li>
-                        <li>Streaming responses</li>
-                        <li>REST API integration</li>
-                        <li>Prompt engineering</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Games &amp; 3D</h3>
-                    <ul>
-                        <li>Roblox Studio / Luau</li>
-                        <li>Blender</li>
-                        <li>C# (s&amp;box engine)</li>
-                        <li>Emscripten / WebAssembly</li>
-                        <li>Mobile-first game design</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Infrastructure</h3>
-                    <ul>
-                        <li>Linux Servers</li>
-                        <li>Node.js / Express / WebSockets</li>
-                        <li>Supabase (Postgres, Auth, RLS)</li>
-                        <li>Stripe Payments</li>
-                        <li>Git / GitHub / CI/CD</li>
-                    </ul>
-                </div>
+                <p>I'm a Computer Science student at Kent State University (B.S. expected May 2028, minor in Computer Engineering). I like taking ideas all the way to launch, and most of what I build has real users or paying customers.</p>
+                <p>Right now I'm focused on AI. I'm building DormFuel, an iOS app that uses the Claude API to estimate protein from a photo of your meal. I also build apps and games with AI coding agents: I write the design specs, then test, review, and fix what the agents build. Outside of AI, I run FreaksMC, a game server hosting business, and my iOS app NeedlePointer has 335+ active users on the App Store.</p>
+                <p class="coursework"><strong>Relevant coursework:</strong> Data Structures, Computer Organization, Discrete Structures, Calculus II</p>
             </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-image">
-                        <div class="app-icon">NP</div>
+
+                <div class="project-card">
+                    <div class="project-image theme-dormfuel">
+                        <div class="app-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>NeedlePointer</h3>
-                        <p class="project-tagline">The creative iOS app for organizing your needlepoint projects</p>
-                        <p>Like Goodreads, but for stitchers. NeedlePointer helps needlepoint enthusiasts organize and track their stitching projects with features including:</p>
+                        <div class="project-title-row">
+                            <h3>DormFuel</h3>
+                            <span class="status">In development</span>
+                        </div>
+                        <p class="project-tagline">An iOS app that tracks protein from a photo of your meal</p>
+                        <p>Take a picture of what you're eating and DormFuel estimates the protein using the Claude API, so tracking takes seconds instead of logging every ingredient.</p>
                         <ul class="project-features">
-                            <li>Photo gallery for works-in-progress and completed pieces</li>
-                            <li>Database of 1,200+ thread colors from 8 major brands</li>
-                            <li>Smart color detection with instant previews</li>
-                            <li>Detailed project tracking and notes</li>
+                            <li>AI photo scans run through a Cloudflare Worker backend, which keeps the API key off the device</li>
+                            <li>Subscriptions handled with StoreKit 2</li>
+                            <li>Native SwiftUI interface</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>SwiftUI</span>
+                            <span>Claude API</span>
+                            <span>Cloudflare Workers</span>
+                            <span>StoreKit 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image theme-ai">
+                        <div class="app-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13.5" r="1.25"/><circle cx="15" cy="13.5" r="1.25"/><path d="M9.5 17h5"/><path d="M2 13v3M22 13v3"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Agents &amp; Automation</h3>
+                        <p class="project-tagline">Building software and running agents with Claude Code, MCP, and local LLMs</p>
+                        <ul class="project-features">
+                            <li>Self-hosted an AI agent on a local LLM and control it from my phone through a Telegram bot</li>
+                            <li>Write detailed design specs that AI coding agents build full apps and games from, then test, review, and fix the output</li>
+                            <li>Use Claude Code with MCP servers to build 3D models in Blender and game levels in Unity and Roblox Studio</li>
+                            <li>Set up an AI blog-writing pipeline with Claude Code that publishes SEO content for FreaksMC</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Claude Code</span>
+                            <span>MCP</span>
+                            <span>Local LLMs</span>
+                            <span>Telegram</span>
+                        </div>
+                        <p class="subhead">Apps I've built with AI coding agents</p>
+                        <div class="agent-grid">
+                            <a class="agent-item" href="https://samcarrara415.github.io/Sams-repo/claude-studio-web/" target="_blank">
+                                <strong>mcode</strong>
+                                <span>A C++ playground for your phone that compiles code on a real gcc compiler and installs as an app</span>
+                            </a>
+                            <a class="agent-item" href="https://github.com/samcarrara415/Sams-repo/tree/main/claude-studio" target="_blank">
+                                <strong>Claude Studio</strong>
+                                <span>An AI app builder, similar to Replit, where you sign in with your own Claude subscription</span>
+                            </a>
+                            <a class="agent-item" href="https://samcarrara415.github.io/Sams-repo/resume-remaster/" target="_blank">
+                                <strong>Resume Remaster</strong>
+                                <span>Rewrites a resume for a target job with Claude; the paid version adds accounts and Stripe billing</span>
+                            </a>
+                            <a class="agent-item" href="https://samcarrara415.github.io/Sams-repo/cpp-academy/" target="_blank">
+                                <strong>C++ Academy</strong>
+                                <span>A mobile app for learning C++, with lessons, challenges, and a built-in editor</span>
+                            </a>
+                            <a class="agent-item" href="https://samcarrara415.github.io/Sams-repo/fomo-tracker/" target="_blank">
+                                <strong>FOMO Radar</strong>
+                                <span>A live crypto token screener that pulls market data and flags risky listings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image theme-needle">
+                        <div class="app-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 20 18.5 5.5"/><ellipse cx="19.5" cy="4.5" rx="1.6" ry="1" transform="rotate(-45 19.5 4.5)"/><path d="M19.5 4.5c2 3-1 6-4 6.5s-6 2-6.5 5.5 3 4 5 2.5"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-title-row">
+                            <h3>NeedlePointer</h3>
+                            <span class="status live">Live on the App Store</span>
+                        </div>
+                        <p class="project-tagline">An iOS app for needlepoint stitchers, with 335+ active users</p>
+                        <p>Like Goodreads, but for stitchers: NeedlePointer helps people track their thread colors and organize their needlepoint projects.</p>
+                        <ul class="project-features">
+                            <li>1,200+ thread colors stored in Core Data, synced across devices with iCloud</li>
+                            <li>In-app purchases with StoreKit 2 and ads with AdMob</li>
+                            <li>Photo gallery for works in progress and finished pieces</li>
                         </ul>
                         <div class="project-tech">
                             <span>Swift</span>
                             <span>SwiftUI</span>
                             <span>Core Data</span>
-                            <span>iOS 15+</span>
+                            <span>StoreKit 2</span>
+                            <span>iCloud</span>
                         </div>
                         <div class="project-links">
                             <a href="https://apps.apple.com/us/app/needlepointer/id6757410129" class="project-link" target="_blank">App Store</a>
@@ -152,24 +156,25 @@
 
                 <div class="project-card">
                     <div class="project-image theme-freaksmc">
-                        <div class="app-icon">FM</div>
+                        <div class="app-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6"/></svg>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>FreaksMC</h3>
-                        <p class="project-tagline">A Minecraft server-hosting business I built and run solo</p>
-                        <p>A full-stack hosting platform serving paying customers, from the storefront to the hardware it runs on.</p>
+                        <p class="project-tagline">A paid game server hosting business I run</p>
+                        <p>A full hosting platform with paying customers, from the website and billing down to the hardware it runs on.</p>
                         <ul class="project-features">
-                            <li>React front end deployed through a Cloudflare Pages CI/CD pipeline</li>
-                            <li>Stripe billing with 2-week free trials that convert to paid plans</li>
-                            <li>Bare-metal Linux servers running Pterodactyl for game server management</li>
-                            <li>SEO work on the React SPA, plus an internal Python/SQLite outreach tracker</li>
+                            <li>Runs on bare-metal AMD EPYC servers in a data center</li>
+                            <li>React site on Cloudflare Pages with Stripe billing (Paymenter) and automatic server setup (Pterodactyl)</li>
+                            <li>Fixed SEO on the React site with proper meta tags and pre-rendering; analytics with GA4 and Microsoft Clarity</li>
+                            <li>Building an iOS app for customers to manage their servers</li>
                         </ul>
                         <div class="project-tech">
                             <span>React</span>
                             <span>Stripe</span>
-                            <span>Linux</span>
-                            <span>SQL</span>
-                            <span>Python</span>
+                            <span>Pterodactyl</span>
+                            <span>Cloudflare Pages</span>
                         </div>
                         <div class="project-links">
                             <a href="https://freaksmc.com" class="project-link" target="_blank">Visit Site</a>
@@ -178,41 +183,19 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image theme-games">
-                        <div class="app-icon">FG</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>freaksgames.com</h3>
-                        <p class="project-tagline">A browser games platform with 150+ titles</p>
-                        <p>A web platform for instant-play HTML5 games, no downloads needed.</p>
-                        <ul class="project-features">
-                            <li>Hosts 150+ HTML5 games</li>
-                            <li>Ported open-source games to the web with Emscripten / WebAssembly</li>
-                            <li>Handled CORS configuration and open-source license compliance</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>HTML5</span>
-                            <span>WebAssembly</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://freaksgames.com" class="project-link" target="_blank">Visit Site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
                     <div class="project-image theme-roblox">
-                        <div class="app-icon">DG</div>
+                        <div class="app-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M7 7h10a5 5 0 0 1 5 5v1.5a3.5 3.5 0 0 1-6.3 2.1L14.5 14h-5l-1.2 1.6A3.5 3.5 0 0 1 2 13.5V12a5 5 0 0 1 5-5z"/><path d="M7 10v3M5.5 11.5h3"/><path d="M16 10.5h.01M18 12.5h.01"/></svg>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Roblox Games — DoSa Games</h3>
-                        <p class="project-tagline">Published Roblox games built with a co-developer</p>
-                        <p>Games designed mobile-first, with original 3D art modeled in Blender and gameplay written in Luau.</p>
+                        <h3>3 Published Roblox Games</h3>
+                        <p class="project-tagline">Games I designed and shipped with a co-developer under DoSa Games</p>
+                        <p>Built mobile-first, with original 3D art modeled in Blender and gameplay written in Luau.</p>
                         <ul class="project-features">
-                            <li><strong>Chud Life Simulator</strong> — eat-to-grow physics sim with three worlds, pets, and upgrades</li>
-                            <li><strong>Haul a Meteor</strong> — truck-hauling sim with a vehicle shop and zones to unlock</li>
-                            <li><strong>Complete the Obby as a Japanese Mini Truck</strong> — 50-stage driving obby with custom kei-truck models</li>
+                            <li>Three games live on Roblox, including Haul a Meteor, a truck-hauling sim with a vehicle shop and unlockable zones</li>
+                            <li>Progression systems: upgrades, pets, vehicle shops, and unlockable worlds</li>
+                            <li>Custom vehicle and environment models made in Blender</li>
                         </ul>
                         <div class="project-tech">
                             <span>Luau</span>
@@ -223,148 +206,19 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image theme-ai">
-                        <div class="app-icon">CS</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Claude Studio</h3>
-                        <p class="project-tagline">An AI app builder, similar to Replit, that runs on your own Claude subscription</p>
-                        <p>Describe an app in chat and Claude writes it, with a file tree, code editor, and live preview. You log in with your own Claude Pro/Max plan, so there's no shared API key to pay for.</p>
-                        <ul class="project-features">
-                            <li>"Log in with Claude" via PKCE OAuth, with automatic token refresh</li>
-                            <li>Streams multi-file projects; follow-up prompts edit the code with full file context</li>
-                            <li>C++ projects compile with <code>g++ -std=c++20</code> on the server and run with stdin, timeouts, and a console</li>
-                            <li>Monaco editor, a sandboxed preview iframe, and a mobile layout with bottom tabs; installable as a PWA</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>Claude API</span>
-                            <span>OAuth</span>
-                            <span>Monaco</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/samcarrara415/Sams-repo/tree/main/claude-studio" class="project-link" target="_blank">Source</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image theme-mcode">
-                        <div class="app-icon">&#9656;_</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>mcode</h3>
-                        <p class="project-tagline">A C++ playground in your browser that compiles with a real gcc</p>
-                        <p>Write C++, hit Run, and see the output in a terminal. No server and no account, and it installs to your home screen as an app.</p>
-                        <ul class="project-features">
-                            <li>Compiles on gcc 13.2 through the Wandbox API, so the full standard library works (C++17/20/23)</li>
-                            <li>Code editing with auto-close and auto-indent, plus a native editor on touch devices for real text selection</li>
-                            <li>Opens and saves <code>.cpp</code> files through the iOS Files app</li>
-                            <li>Offline app shell; a network-first service worker means new deploys show up right away</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>PWA</span>
-                            <span>Service Workers</span>
-                            <span>REST APIs</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://samcarrara415.github.io/Sams-repo/claude-studio-web/" class="project-link" target="_blank">Try It</a>
-                            <a href="https://github.com/samcarrara415/Sams-repo/tree/main/claude-studio-web" class="project-link" target="_blank">Source</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image theme-resume">
-                        <div class="app-icon">RR</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Resume Remaster</h3>
-                        <p class="project-tagline">AI resume rewriting, built as a free tool and a full SaaS</p>
-                        <p>Upload a PDF or DOCX resume, pick a target job, and Claude rewrites it for that role. It started as a static web app and grew into a paid product.</p>
-                        <ul class="project-features">
-                            <li>SaaS version: Next.js, TypeScript, and Tailwind, with Supabase auth and Postgres secured by row-level security</li>
-                            <li>Stripe checkout for one-off unlocks and monthly subscriptions, plus single-use promo codes for giveaways</li>
-                            <li>Verified-purchase reviews, an admin dashboard, and PDF/DOCX parsing on the server</li>
-                            <li>The free web version supports both API-key and Claude-subscription modes and was hardened for iOS Safari</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>TypeScript</span>
-                            <span>Supabase</span>
-                            <span>Stripe</span>
-                            <span>Claude API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://samcarrara415.github.io/Sams-repo/resume-remaster/" class="project-link" target="_blank">Try It</a>
-                            <a href="https://github.com/samcarrara415/Sams-repo/tree/main/resume-saas" class="project-link" target="_blank">Source</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image theme-academy">
-                        <div class="app-icon">C++</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>C++ Academy</h3>
-                        <p class="project-tagline">An app for learning C++ on your phone</p>
-                        <p>A mobile-first PWA that teaches C++ from "Hello, World!" through pointers, RAII, and object-oriented design, with an IDE built in.</p>
-                        <ul class="project-features">
-                            <li>A structured curriculum: foundations, control flow, functions, collections, memory, and OOP</li>
-                            <li>Lessons with exercises and challenges you solve in the built-in editor</li>
-                            <li>Installable and works offline</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>PWA</span>
-                            <span>C++</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://samcarrara415.github.io/Sams-repo/cpp-academy/" class="project-link" target="_blank">Try It</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image theme-fomo">
-                        <div class="app-icon">FR</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>FOMO Radar</h3>
-                        <p class="project-tagline">A live meme-coin screener with rug-risk checks</p>
-                        <p>A browser app with no backend that scans new and trending DEX pools on Solana, Base, Ethereum, and BNB Chain every 60 seconds.</p>
-                        <ul class="project-features">
-                            <li>A 0–100 "FOMO score" built from price momentum, growth in unique buyers, buy pressure, and volume turnover</li>
-                            <li>Rug-risk checks: thin liquidity, honeypot patterns (no sells), wash trading, and dump patterns</li>
-                            <li>One-click links to audit tools (DexScreener, RugCheck, Honeypot.is, GoPlus)</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>REST APIs</span>
-                            <span>Data Analysis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://samcarrara415.github.io/Sams-repo/fomo-tracker/" class="project-link" target="_blank">Try It</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
                     <div class="project-image theme-cpp">
-                        <div class="app-icon">C++</div>
+                        <div class="app-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/><path d="M11 18V12M14 18V9"/></svg>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>C++ Systems Projects</h3>
-                        <p class="project-tagline">Coursework at Kent State</p>
-                        <p>Object-oriented projects in C++ focused on data structures and how code runs on hardware.</p>
+                        <h3>C++ Source Code Profiler</h3>
+                        <p class="project-tagline">A tool that measures where C++ programs spend their time</p>
+                        <p>It adds tracking code to a C++ program so you can see how often each line and function runs.</p>
                         <ul class="project-features">
-                            <li>Arbitrary-precision Bigint class</li>
-                            <li>Binary search tree</li>
-                            <li>Infix-to-postfix converter that emits assembly</li>
-                            <li>Source-code profiler for C++ programs</li>
+                            <li>Parses C++ source and inserts counters at each line and function</li>
+                            <li>Reports execution counts so you can find hot spots</li>
+                            <li>Other coursework in C++: an arbitrary-precision Bigint class, a binary search tree, and an infix-to-postfix converter that outputs assembly</li>
                         </ul>
                         <div class="project-tech">
                             <span>C++</span>
@@ -374,35 +228,96 @@
                     </div>
                 </div>
             </div>
+
             <h3 class="more-heading">More Projects</h3>
             <div class="mini-grid">
+                <a class="mini-card" href="https://freaksgames.com" target="_blank">
+                    <h4>freaksgames.com</h4>
+                    <p>A browser games site with 150+ HTML5 games that play instantly, with no downloads.</p>
+                    <span class="mini-tech">JavaScript · HTML5</span>
+                </a>
                 <a class="mini-card" href="https://github.com/samcarrara415/Sams-repo/tree/main/remote-dev-server" target="_blank">
                     <h4>Remote Dev Server</h4>
-                    <p>A web terminal plus live iOS Simulator streaming with touch input, so I can develop on a Mac from any browser.</p>
-                    <span class="mini-tech">Node.js · WebSockets · Swift · Python</span>
+                    <p>A web terminal plus live iOS Simulator streaming, so I can develop on a Mac from any browser.</p>
+                    <span class="mini-tech">JavaScript · Swift · Python</span>
                 </a>
                 <a class="mini-card" href="https://github.com/samcarrara415/Sams-repo/tree/main/sbox-macos-patches" target="_blank">
                     <h4>s&amp;box macOS Patches</h4>
-                    <p>Patches that get Facepunch's s&amp;box engine building on Apple Silicon: cross-platform paths, native library loading for each OS, and Rosetta workarounds.</p>
-                    <span class="mini-tech">C# · .NET · macOS</span>
-                </a>
-                <a class="mini-card" href="https://samcarrara415.github.io/Sams-repo/kitchen-catering/" target="_blank">
-                    <h4>The Seasonal Table</h4>
-                    <p>A kitchen and catering website with a rotating weekly menu and a form for booking events.</p>
-                    <span class="mini-tech">HTML · CSS · JavaScript</span>
-                </a>
-                <a class="mini-card" href="https://github.com/samcarrara415/Sams-repo/tree/main/WEB%20trivia%20game%20about%20my%20college" target="_blank">
-                    <h4>College Trivia</h4>
-                    <p>A multi-page web trivia game about my college and campus life.</p>
-                    <span class="mini-tech">HTML · JavaScript</span>
+                    <p>Patches that get Facepunch's s&amp;box game engine building on Apple Silicon Macs.</p>
+                    <span class="mini-tech">C# · macOS</span>
                 </a>
             </div>
-            <p class="all-projects"><a href="https://samcarrara415.github.io/Sams-repo/" target="_blank">See all live demos &rarr;</a></p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="job">
+                    <div class="job-head">
+                        <h3>Freelance Web Developer</h3>
+                        <span class="job-date">Current</span>
+                    </div>
+                    <ul>
+                        <li>Built a client website with Stripe payments on Cloudflare Pages and maintain it on a monthly contract</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <div class="job-head">
+                        <h3>Truck Driver &amp; Catering Coordinator</h3>
+                        <span class="job-date">May 2021 – Aug 2026</span>
+                    </div>
+                    <p class="job-org">Taste of Excellence Catering · Strongsville, OH</p>
+                    <ul>
+                        <li>Planned load-outs and delivery timing for catered events</li>
+                        <li>Delivered food and equipment to event venues in company trucks</li>
+                        <li>Set up events on site and worked with clients and kitchen staff to get orders right</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Swift</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>Python (basic)</li>
+                        <li>MIPS Assembly</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Frameworks &amp; Tools</h3>
+                    <ul>
+                        <li>SwiftUI, Core Data, StoreKit 2, iCloud</li>
+                        <li>React</li>
+                        <li>Django, Flask</li>
+                        <li>Stripe</li>
+                        <li>Cloudflare Pages</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>AI</h3>
+                    <ul>
+                        <li>Claude Code</li>
+                        <li>Claude API</li>
+                        <li>MCP servers</li>
+                        <li>AI agents</li>
+                        <li>Local LLMs</li>
+                        <li>AI-assisted development</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Get In Touch</h2>
-            <p>I'm currently looking for internship and job opportunities. Feel free to reach out!</p>
+            <p>I'm looking for internships, especially in AI and software engineering. Feel free to reach out!</p>
             <div class="contact-links">
                 <a href="mailto:samcarrara415@gmail.com" class="contact-button">Email Me</a>
                 <a href="https://github.com/samcarrara415" class="contact-button" target="_blank">GitHub</a>
